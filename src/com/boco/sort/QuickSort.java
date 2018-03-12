@@ -1,13 +1,13 @@
 package com.boco.sort;
 
+import java.util.Arrays;
+
 public class QuickSort {
 	
 	public static void main(String[] args) {
-		int[] array = {1,2,3,4,5,6,7,8,9};
+		int[] array = {6, 9, 7, 8, 5, 6, 3, 1, 2};
 		quickSort(array, 0, array.length - 1);
-		for(int i : array) {
-			System.out.print(i);
-		}
+		System.out.print(Arrays.toString(array));
 	}
 	
 	public static void quickSort(int[] array, int left, int right) {
